@@ -13,10 +13,19 @@ import { Component, HostListener } from '@angular/core';
 
 export class NavbarComponent {
 
+  //write a code such that in html file, when the nav element has class isScrollUp, the img tag should be removed
+
+    // Add a getter method to check if the nav element has the class isScrollUp
+    get isNavScrollUp(): boolean {
+      return this.isScrollUp;
+    }
+
   isScrollUp: boolean = false; //intial visibilty of isScrollUp is false
   isOriginal: boolean = true; //intial visibilty of isOriginal is true
 
   private previousScrollPosition: number = 0;
+
+
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
