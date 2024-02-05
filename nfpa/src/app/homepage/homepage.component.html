@@ -1,0 +1,77 @@
+<app-navbar></app-navbar>
+
+<section id="homePage">
+
+  <div class="carousel">
+    <video class="carouselVideo" autoplay loop>
+      <source src="../../assets/intro-vdo.mp4" type="video/mp4" />
+    </video>
+  </div>
+  
+<!-- VERY IMPORTANT:
+  give credits to 
+  
+  <a href="https://www.freepik.com/free-photo/professional-firefighter-dressed-uniform-oxygen-mask-standing-fire-sparks-smoke-dark-background_25129966.htm#query=fire%20extinguisher&position=49&from_view=search&track=ais&uuid=92a7563b-4867-45f6-bdc3-e7a1b627892d">Image by fxquadro</a> on Freepik - counter image
+
+  <a href="https://www.flaticon.com/free-icons/public-relations" title="public relations icons">Public relations icons created by Canticons - Flaticon</a> - client icon
+
+  <a href="https://www.flaticon.com/free-icons/fire-hose" title="fire hose icons">Fire hose icons created by Freepik - Flaticon</a> - fire hose
+
+  <a href="https://www.flaticon.com/free-icons/gateway-of-india" title="gateway of india icons">Gateway of india icons created by Freepik - Flaticon</a> - gateway of india 
+
+<a href="https://www.flaticon.com/free-icons/fire-extinguisher" title="fire extinguisher icons">Fire extinguisher icons created by Freepik - Flaticon</a> - system installed icon
+-->
+
+  <div class="counterContainer">
+    
+    <div class="counterImg">
+      <img src="../../assets/images/counter.jpg" alt="">
+    </div>
+
+    <div class="counterNo">
+      
+      <div class="counters">
+        <span >
+        <img src="../../assets/images/gateway.png" alt="">
+        <h4 style="color: #e4a600;">{{statecount+ "+"}}</h4>
+        </span>
+        <p>States served</p>
+      </div>
+
+      <!--card-->
+      <div class="counters">
+
+        <span>
+        <img src="../../assets/images/fire-hose.png" alt="" >
+        <h4 style="color: #48b84b;">{{productcount+ "+"}}</h4>
+        </span>
+        <p>Products & Services</p>
+      </div>
+
+      <!--card-->
+      <div class="counters">
+        <span>
+        <img src="../../assets/images/public-relation.png" alt="">
+        <h4 style="color: #28a5df;">{{clientcount+ "+"}} </h4>
+        </span>
+        <p>Clients</p>
+      </div>
+
+      <!--card-->
+      <div class="counters">
+        <span>
+        <img src="../../assets/images/fire-extinguisher.png" alt="">
+        <h4 style="color: #c81010;">{{installcount+ "+"}} </h4>
+        </span>
+        <p>Systems Installed</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  
+</section>
+  <app-footer></app-footer>
+
+

@@ -1,0 +1,87 @@
+
+.carousel{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 30rem;
+}
+
+.carouselVideo
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.counterContainer {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.counterImg img
+{
+    width: 30rem;
+    height: 20rem;
+}
+
+.counterNo{
+    width: 55rem;
+    height: 20rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2rem;
+    background-color: white;
+}
+
+.counters span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.counters span img{
+    width: 60px;
+    height: 60px;
+    margin: 5px 10px 5px 0px;
+}
+
+.counters h4 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.counters p {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* @media (max-width:991px) {
+    .mt-100 {
+        margin-top: 30px !important;
+    }
+    .client-count-wrp {
+        padding: 40px 0;
+    }
+    .client-count-wrp-inner {
+        flex-direction: column;
+    }
+    .cards h4 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .cards {
+        margin: 20px 0;
+    }
+    .client-count-wrp {
+        padding: 25px 0;
+        margin: 0 25px;
+    }
+} */
