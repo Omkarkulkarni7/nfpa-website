@@ -8,10 +8,14 @@
     </div>
 
     <div class="menu">
-      <a href="../app.component.html">Home</a>
-      <a href="#">About Us</a>
-      <a href="../total-systems/total-systems.component.html">Products & Services</a>
-      <a href="#">Contact Us</a>
+      
+     <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+     <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+     <a routerLink="/total-systems" routerLinkActive="active" ariaCurrentWhenActive="page">Products & Services</a>
+     <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+
     </div>
 
 </nav>
+
+<router-outlet></router-outlet>

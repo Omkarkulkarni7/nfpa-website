@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { FooterComponent } from '../footer/footer.component';
-import { TotalSystemsComponent } from '../total-systems/total-systems.component';
+import { AboutpageComponent } from '../aboutpage/aboutpage.component';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, TotalSystemsComponent],
+  imports: [AboutpageComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
 })
