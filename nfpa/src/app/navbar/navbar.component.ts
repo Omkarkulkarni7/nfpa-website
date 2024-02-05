@@ -2,11 +2,12 @@
 import { RouterOutlet } from '@angular/router';
 import { NgIf, NgStyle, NgClass } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { TotalSystemsComponent } from '../total-systems/total-systems.component';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgStyle, NgClass, RouterOutlet, NgIf],
+  imports: [NgStyle, NgClass, RouterOutlet, NgIf, TotalSystemsComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
