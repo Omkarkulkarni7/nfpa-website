@@ -1,12 +1,14 @@
 
-import { RouterOutlet } from '@angular/router';
-import { NgIf, NgStyle, NgClass } from '@angular/common';
+import { NgIf, NgStyle, NgClass, CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { AboutpageComponent } from '../aboutpage/aboutpage.component';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgStyle, NgClass, RouterOutlet, NgIf],
+  imports: [NgStyle, NgClass, RouterOutlet, NgIf, AboutpageComponent, CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
