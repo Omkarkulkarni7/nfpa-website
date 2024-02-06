@@ -1,0 +1,120 @@
+.our-customers{
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+    margin: 30px;
+    opacity: 0; /* Initially hide the image */
+}
+
+.title{
+    opacity: 0;
+}
+
+.list-of-customers{
+    position: relative;
+    z-index: 1; /* Positioned below the vignette */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    overflow-x: hidden;
+    padding-bottom: 30px;
+}
+
+.list-1{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.list-2{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.list-1 > div, .list-2 > div {
+    flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+}
+
+.img-list {
+    height: 120px;
+    opacity: 0;
+    padding: 3px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  */
+    visibility: hidden;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+  
+.img-visible {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.individual-img{
+    opacity: 0; /* Initially hide the image */
+    height: 140px;
+    padding: 10px;
+    /* border: rgb(10, 6, 6) 1px solid; */ 
+    /* border-radius: 5px;*/
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; 
+    overflow: hidden;
+}
+
+/* .individual-img:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  */
+    /* transition: box-shadow 0.3s ease-out;
+} */
+
+.title-visible {
+    animation: moveFromRightToLeft 1s ease-in-out both;
+}
+
+@keyframes moveFromRightToLeft {
+    0% {
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    0% {
+        transform: translateX(15%);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    85% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+
