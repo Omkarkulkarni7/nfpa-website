@@ -1,0 +1,62 @@
+.vision-div{
+    padding: 50px 0;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.content-div{
+    margin: 0 50px;
+    padding: 35px;
+    width: auto;
+    border: black 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.image-div{
+    margin: 10px 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 600px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 40px;
+    gap: 25px;
+}
+
+.sub-desc{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: left;
+    text-align: left;
+}
+
+h4, p{
+    padding: 15px;
+}
+
+h4{
+    margin-bottom: 15px;
+}
+
+p{
+    font: 1px;
+    font-size: 1.3rem;
+}

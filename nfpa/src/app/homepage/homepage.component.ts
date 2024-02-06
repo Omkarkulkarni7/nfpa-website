@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { AboutpageComponent } from '../aboutpage/aboutpage.component';
+import { OurProductsComponent } from '../our-products/our-products.component';
+import { OurCustomersComponent } from '../our-customers/our-customers.component';
+import { OurServicesComponent } from '../our-services/our-services.component';
+import { CertificationComponent } from '../certification/certification.component';
+import { OurVisionComponent } from '../our-vision/our-vision.component';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [AboutpageComponent],
+  imports: [AboutpageComponent, OurProductsComponent, OurCustomersComponent, OurServicesComponent, CertificationComponent, OurVisionComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
 })

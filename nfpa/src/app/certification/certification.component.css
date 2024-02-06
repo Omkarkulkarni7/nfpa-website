@@ -1,0 +1,28 @@
+.container{
+    width: auto;
+    /* height: 400px; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 15px;
+    margin: 50px auto;
+    padding: 15px;
+    border: black 2px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.list1, .list2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.single-logo{
+    height: 75px;
+    margin: 20px 5px;
+}

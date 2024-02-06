@@ -1,0 +1,116 @@
+.container{
+    padding-top: 20px;
+    background-color: white;
+    background-image: url("../../assets/firefighter-transformed.jpeg");
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+    border: black 1px solid;
+    border-radius: 5%;
+    width: 100%;
+  }
+  
+  h1{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff7b00;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+  }
+  
+  .main-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+      grid-gap: 10px; /* Adds a gap between grid items */
+      /* background-color: white; */
+  }
+  
+  .capsule-container {
+      position: relative; /*Set relative positioning for the parent */
+      background-color: #FFA500; /* Or the specific orange you need */
+      border-radius: 75px; /*Adjust as needed */
+      padding: 10px 30px; /* Adjust as needed, add padding on the left */
+      width: 425px; /*Adjust based on your design*/
+      height: auto;
+      margin: 30px 20px; /*Make room for the QR code circle*/
+      text-align: center;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  .image-class {
+      position: absolute; /* Absolute positioning to place it half outside */
+      top: 0%; /* Center it vertically */
+      left: 50%; /* Align it to the left edge */
+      transform: translate(-50%, -50%); /* Center the div on the edge */
+      background-color: #fff;
+      background-color: #FFA500; /* White background for QR code */
+      border: white 4px solid;
+      border-radius: 50%; /* Makes it a circle */
+      padding: 15px; /* Adjust as needed */
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  
+  .image-class img {
+      display: block; /* Removes bottom space under image */
+      width: 50px; /* Adjust based on your design */
+      height: auto;
+  }
+  
+  .text-content {
+      width: 100%;
+      padding: 40px 0 20px 0;
+      color: #fff; /* White text */
+      font-family: Arial, sans-serif; /* Choose your font */
+      font-size: 16px; /* Adjust as needed */
+      text-align: center;
+      opacity: 1; /* Adjust as needed */
+  }
+  
+  .text-content strong {
+    /* padding-top: 40px; */
+      font-size: 18px; /* Adjust as needed */
+      display: block; /* Makes the text bold */
+      /* margin-bottom: 10px; Adds space between the text and the QR code */
+  }
+  
+    /* Responsive adjustments */
+    /* @media (max-width: 480px) {
+  
+      .capsule-container {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 20px; 
+        margin-left: 0; 
+      }
+  
+      .image-class {
+        position: static; 
+        transform: none; 
+        margin: 0 auto 10px; 
+      }
+    } */
+  
+  /* 
+  .left{
+      top: 0%; 
+      left: 80%; 
+  }
+  
+  .center{
+      top: 0%; 
+      left: 50%; 
+  }
+  
+  .right{
+      top: 0%; 
+      left: 20%; 
+  } */
+  
+  
