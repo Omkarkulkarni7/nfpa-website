@@ -1,9 +1,9 @@
 
-<nav [ngClass]="{'navigate': isOriginal, 'scrollNavigateUp': isScrollUp }">
+<nav [@openClose]="isOpen ? 'open' : 'closed'">
 
     <div class="logoName">
-      <img src="../../assets/images/logo-cropped.jpeg" alt="logo" class="logoImage"  *ngIf="isOriginal"/>
-      <img src="../../assets/images/logo-cropped - colored.jpeg" alt="logo" class="logoImage" *ngIf="isScrollUp" />
+      <img src="../../assets/images/logo-cropped.jpeg" alt="logo" class="logoImage" *ngIf="isOpen === true" />
+      <img src="../../assets/images/logo-cropped - colored.jpeg" alt="logo" class="logoImage" *ngIf="isOpen === false" />
       <span class="fire-logo">NFPA India Pvt. Ltd</span>
     </div>
 

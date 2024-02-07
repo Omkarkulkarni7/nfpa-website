@@ -6,6 +6,14 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TotalSystemsComponent } from './total-systems/total-systems.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-root',
