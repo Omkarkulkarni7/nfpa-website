@@ -27,7 +27,6 @@ import {
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
-    IndividualItemsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
