@@ -1,6 +1,7 @@
 import { NgIf, NgStyle, NgClass, CommonModule } from '@angular/common';
 import { Component, HostListener, Input } from '@angular/core';
 import { AboutpageComponent } from '../aboutpage/aboutpage.component';
+import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import {
   trigger,
