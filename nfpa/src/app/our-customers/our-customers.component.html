@@ -1,0 +1,18 @@
+<div class="our-customers">
+    <h1 class="title" #title>
+        Our Customers
+    </h1>
+    <div id="client-section" class="list-of-customers">
+        <div class="list-1">
+            <div #clientLogos class="individual-img" *ngFor="let imagePath of list1Images; let i = index" [style.animationDelay] = "i * 0.15 + 's'">
+                <img #clientLogos class="img-list img-list1" src="{{imagePath}}" alt="">
+            </div>
+        </div>
+
+        <div class="list-2">
+            <div #clientLogos class="individual-img" *ngFor="let imagePath of list2Images; let j = index" [style.animationDelay] = "j * 0.15 + 's'">
+                <img #clientLogos class="img-list img-list2" src="{{imagePath}}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
