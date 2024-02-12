@@ -6,6 +6,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TotalSystemsComponent } from './total-systems/total-systems.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { IndividualItemsComponent } from './individual-items/individual-items.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
+    IndividualItemsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
