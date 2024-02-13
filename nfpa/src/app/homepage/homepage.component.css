@@ -63,25 +63,31 @@
     text-align: center;
 }
 
-/* @media (max-width:991px) {
-    .mt-100 {
-        margin-top: 30px !important;
-    }
-    .client-count-wrp {
-        padding: 40px 0;
-    }
-    .client-count-wrp-inner {
+@media screen and (max-width: 768px) {
+    
+    .counterContainer{
+        display: flex;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: auto;
     }
-    .cards h4 {
-        font-size: 50px;
-        line-height: 40px;
+
+
+
+    .counterImg img{
+        width: 100%;
+        height: auto;
+
     }
-    .cards {
-        margin: 20px 0;
+
+    .counterNo{
+        width: 95vw;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        background-color: white;
     }
-    .client-count-wrp {
-        padding: 25px 0;
-        margin: 0 25px;
-    }
-} */
+}
