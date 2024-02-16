@@ -23,6 +23,8 @@ const firebaseConfig = {
   "measurementId":"G-F4RHGERTHV"
 };
 
+
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes), 
