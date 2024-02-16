@@ -96,6 +96,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "nfpa:build:production",
+              "serveTarget": "nfpa:serve:production"
+            },
+            "development": {
+              "buildTarget": "nfpa:build:development",
+              "serveTarget": "nfpa:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

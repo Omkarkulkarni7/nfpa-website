@@ -1,0 +1,18 @@
+<div class="dialogbox">
+    <div *ngIf="detail$ | async as detail">
+        <table>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        <tr *ngFor="let key of detail | keyvalue">
+            <td>{{ key.key }}</td>
+            <td>{{ key.value }}</td>
+        </tr>
+        </table>
+    </div>
+    
+    <div class="getquote">
+        <button id="btn">Get Quotation</button>
+    </div>
+</div>

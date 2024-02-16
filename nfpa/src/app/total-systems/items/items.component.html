@@ -1,0 +1,15 @@
+<div class="card" *ngIf="product$ | async as product">
+    <div class="imgBx">
+        <a [routerLink]="['/individual-items', type, id]" routerLinkActive="active" ariaCurrentWhenActive="page">
+            <img class="image" [src]="product['imageUrl']" alt="Product image">
+        </a>
+    </div>
+    <div class="details">
+        <a [routerLink]="['/individual-items', type, id]" routerLinkActive="active" ariaCurrentWhenActive="page"><h2 class="heading">{{ product['name'] }}</h2></a>
+        <ul>
+            <li *ngFor="let name of product['subProductNames']">{{ name }}</li>
+        </ul>
+    </div>
+</div>
+
+

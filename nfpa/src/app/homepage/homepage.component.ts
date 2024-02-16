@@ -9,7 +9,7 @@ import { OurVisionComponent } from '../our-vision/our-vision.component';
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [AboutpageComponent, OurProductsComponent, OurCustomersComponent, OurServicesComponent, CertificationComponent, OurVisionComponent],
+  imports: [ OurProductsComponent, OurCustomersComponent, OurServicesComponent, CertificationComponent, OurVisionComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
 })

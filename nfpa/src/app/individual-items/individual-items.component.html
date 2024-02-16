@@ -1,143 +1,29 @@
 <section class="individual-items">
 
-<div class="items">
-      <h2>Fire Suppression Systems</h2>
-  <nav aria-label="breadcrumb" class="breadcrumb-header">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page"><a href="/total-systems">Products & Services</a></li>
-      <li class="breadcrumb-item active" aria-current="page"><a href="/itemss">Fire Suppression Systems</a></li>
-    </ol>
-  </nav>
-  <div class="form-search">
-    <div class="search">
-        <input class="search-box" type="search" placeholder="Search">
-    </div>
-</div>
-</div>
-
-<div class="subtitle">
-      <h2>Fire Suppression Systems</h2>
-</div>
-<div class="para">
-  <p>We take pride in presenting a diverse selection of cutting-edge products designed to safeguard you and your surroundings. Our comprehensive range includes top-notch solutions such as fire suppression systems, kitchen suppression systems, wet chemical fire suppression systems, electrical panel fire suppression systems, and tube base suppression systems. 
-    At NFPA India Pvt. Ltd, we are dedicated to providing you with a complete choice of high-quality products, ensuring that your safety is never compromised. Explore our offerings and discover the peace of mind that comes with optimal fire safety solutions.</p>
-</div>
-
-<!-- <div class="container-decor-box">
-  <div class="inside-box">
-  </div>
-</div> -->
-
-<div class="container">
-  <hr>
-  <h3 class="sub-heading">Wet Chemical Fire Suppression System</h3>
-  <div class="line-deco"></div>
-  <hr>
-  <div class="fire-suppression">
-    <div class="bg-image">
-    <img
-      src="../../assets/images/wet-chemical-solution-extinguishing-system.jpg"
-      class="image"
-      alt="Sample"
-    />
-  </div> 
-  <p class="sub-para">Specifically designed for the unique challenges posed by kitchen fires, this system takes a proactive approach to fire prevention. Employing a specially formulated wet chemical agent, it not only rapidly suppresses flames but also creates a protective barrier to prevent re-ignition.
-    <br>
-    <br>
-    Delivery Time: 1 week
-  </p>  
-</div>
-
-<!-- <div class="container-above">
-  <p>Product Details:
-    Minimum Order Quantity	1 System
-    Usage/Application	Industrial
-    Type	Fire Suppression Systems
-    Fire Suppression Type	All
-    Automation Grade	Automatic</p>
-</div> -->
-
-  <div class="button">
-    <button class="details-btn">View Details</button>
-  </div>
-</div>
-
-<!-- <div class="container-decor-box-1">
-  <div class="inside-box-1">
-  </div>
-</div> -->
-
-<div class="container">
-  <hr>
-  <h3 class="sub-heading">Electrical Panel Fire Suppression System</h3>
-  <div class="line-deco"></div>
-  <hr>
-  <div class="fire-suppression">
-    <div class="bg-image">
-    <img
-      src="../../assets/images/wet-chemical-solution-extinguishing-system.jpg"
-      class="image"
-      alt="Sample"
-    />
-    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <p class="text-white mb-0">ISI approved CO2 type of fire extinguisher is applicable to fight Class B, Class C, and Electrical fire.
-            Available in 2 Kg, 4.5 Kg, 6.5 Kg, 9 Kg, 22.5 Kg these capacities
-            
-            Other Details :
-            Prices may vary as per sizes
-            
-            Additional Information:
-            Port of Dispatch: Pune
-            Delivery Time: One Day</p>
+  <div class="items" *ngIf="product$ | async as product">
+    <h2>{{ product['name'] }}</h2>
+    <nav aria-label="breadcrumb" class="breadcrumb-header">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="/total-systems">Products & Services</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="/itemss">{{ product['name'] }}</a></li>
+      </ol>
+    </nav>
+    <div class="form-search">
+      <div class="search">
+          <input class="search-box" type="search" placeholder="Search">
       </div>
     </div>
-  </div> 
-  <p class="sub-para">This advanced system utilizes cutting-edge technology to detect and suppress fires at their source, preventing catastrophic damage to critical electrical infrastructure. By deploying a specialized fire suppression agent, the system swiftly curtails flames without causing harm to delicate electronic components.</p>
-  </div>
-  <div class="button">
-    <button class="details-btn">View Details</button>
-  </div>
-</div>
-
-<div class="container">
-  <hr>
-  <h3 class="sub-heading">Tube Base Suppression System</h3>
-  <div class="line-deco"></div>
-  <hr>
-  <div class="fire-suppression">
-    <div class="bg-image">
-    <img
-      src="../../assets/images/wet-chemical-solution-extinguishing-system.jpg"
-      class="image"
-      alt="Sample"
-    />
-    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <p class="text-white mb-0">ISI approved CO2 type of fire extinguisher is applicable to fight Class B, Class C, and Electrical fire.
-            Available in 2 Kg, 4.5 Kg, 6.5 Kg, 9 Kg, 22.5 Kg these capacities
-            
-            Other Details :
-            Prices may vary as per sizes
-            
-            Additional Information:
-            Port of Dispatch: Pune
-            Delivery Time: One Day</p>
+    <div class="para">
+      <p>{{ product['description'] }}</p>
+    </div>
+    <div class="big-div">
+      <div class="big-container">
+        @for (id of ids; track $index) {
+            <app-item [id]="id" [productId]="productId" [type]="type"></app-item>
+        }
       </div>
     </div>
-  </div> 
-  <p class="sub-para">The Tube-Based Suppression System offers a highly effective and reliable solution for fire protection. This innovative system utilizes advanced tubing technology to detect and suppress fires swiftly. With a rapid response time and precision, the Tube-Based Suppression System ensures the safety of your environment. Its design makes it suitable for various applications, providing a robust and efficient approach to fire suppression.
-    <br>
-    <br>
-    Production Capacity: 100
-    <br>
-    Delivery Time: 2 Days
-  </p>
-  </div>
-  <div class="button">
-    <button class="details-btn">View Details</button>
-  </div>
 </div>
 
 </section>

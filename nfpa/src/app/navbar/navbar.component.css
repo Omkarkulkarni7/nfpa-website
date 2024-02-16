@@ -43,10 +43,6 @@ nav{
     color: white;
 }
 
-/* 
-
-*/
-
 
 .logoName {
     width: 100%;
@@ -88,6 +84,7 @@ nav{
 
 
 .menu a {
+    position: relative;
     text-decoration: none;
 }
 

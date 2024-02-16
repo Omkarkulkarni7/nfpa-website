@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { IndividualItemsComponent } from '../individual-items/individual-items.component';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { ProductsComponent } from './products/products.component';
+import { ServicesComponent } from './services/services.component';
+import { SystemsComponent } from './systems/systems.component';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-total-systems',
   standalone: true,
-  imports: [IndividualItemsComponent, RouterLink, RouterOutlet, CommonModule, RouterLinkActive],
+  imports: [ProductsComponent, ServicesComponent, SystemsComponent, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './total-systems.component.html',
   styleUrl: './total-systems.component.css'
 })

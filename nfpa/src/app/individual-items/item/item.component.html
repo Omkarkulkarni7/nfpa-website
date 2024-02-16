@@ -1,0 +1,27 @@
+<div class="container">
+    <div *ngIf="product$ | async as product">
+        <hr>
+        <h3 class="sub-heading">{{ product['name'] }}</h3>
+        <div class="line-deco"></div>
+        <hr>
+        <div class="item-details">
+            <div class="bg-image">
+                      <div *ngFor="let imageUrl of product['imageUrls']">
+                      <img [src]="imageUrl" alt="Product image" height="100px">
+                  </div>
+              </div>
+            <p class="sub-para">{{ product['description'] }}</p>
+        </div>
+    </div>
+    
+    <div class="viewdetails">
+        <button id="btn" (click)="showDialog = true">View Details</button>
+    </div>
+
+    <div *ngIf="showDialog" class="modal">
+        <div class="modal-content">
+            <span class="close" (click)="showDialog = false">&times;</span>
+            <app-dialog [id]="id" [productId]="productId" [type]="type"></app-dialog>
+        </div>
+    </div>
+</div>

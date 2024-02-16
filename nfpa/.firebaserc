@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "nfpa-website": {
+      "hosting": {
+        "nfpa": [
+          "nfpa-website"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "nfpa-website"
+  }
+}
