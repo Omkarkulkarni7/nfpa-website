@@ -36,10 +36,6 @@ nav{
     color: white;
 }
 
-/* 
-
-*/
-
 
 .logoName {
     flex: 2;
@@ -84,12 +80,28 @@ nav{
 }
 
 .menu a {
+    position: relative;
     text-decoration: none;
     color: #000000;
 }
 
+.menu a:after {
+    content: "";
+    position: absolute;
+    background-color: aliceblue;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
 .menu a:hover {
     font-weight: 400;
+}
+
+.menu a:hover:after {
+    width: 100%;
 }
 
 @keyframes fadeInUp {

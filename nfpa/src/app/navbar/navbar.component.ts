@@ -1,7 +1,7 @@
 
 import { NgIf, NgStyle, NgClass, CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { AboutpageComponent } from '../aboutpage/aboutpage.component';
+// import { AboutpageComponent } from '../aboutpage/aboutpage.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgStyle, NgClass, RouterOutlet, NgIf, AboutpageComponent, CommonModule, RouterLink, RouterLinkActive, ContactUsComponent],
+  imports: [NgStyle, NgClass, RouterOutlet, NgIf, CommonModule, RouterLink, RouterLinkActive, ContactUsComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

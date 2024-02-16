@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "nfpa",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
+    }
+  ]
+}
